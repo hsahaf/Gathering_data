@@ -1,0 +1,24 @@
+---
+title: "Gathering_data"
+name: "Huda Sahaf"
+date: "Febuary 16th 2023"
+format: pdf
+editor: visual
+---
+
+```{r}
+library(knitr)
+library(xml2)
+library(tidyverse)
+
+```
+
+
+```{r}
+#| fig-cap: Febuary 16th 2023: NASA APOD
+include_graphics("https://apod.nasa.gov/apod/image/2302/ABELL1060_LRGB_NASA_1024.jpg")
+
+
+
+```
+
