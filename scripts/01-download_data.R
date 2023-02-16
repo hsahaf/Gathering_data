@@ -14,9 +14,11 @@ library(httr)
 library(tidyverse)
 
 #### Download data ####
-# [...ADD CODE HERE TO DOWNLOAD...]
+NASA_APOD_20190719 <-
+  GET("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2021-12-26")
 
-
+content(NASA_APOD_20190719)$url |>
+  download_xml(destfile = "inputs/NASA_APOD_20190719.jpg")
 
 #### Save data ####
 # [...UPDATE THIS...]
